@@ -1,4 +1,33 @@
+:root{
+    font-family: "Oswald", sans-serif;
+}
+
 body{
     margin: 0;
-    padding: 0;
+}
+
+#hero-section{
+    margin: 0;
+    background-image: url("sea-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    display: grid;
+}
+
+#hero-title{
+    font-weight: bold;
+    font-size: 72px;
+    margin-left: 10%;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Ensures it stays on top of the body background */
 }

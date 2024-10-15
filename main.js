@@ -3,14 +3,14 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 // Set up the scene
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xeeeeee); // Optional: Set background color
+scene.background = null // Optional: Set background color
 
 // Set up the camera
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 camera.position.set(0, 0.5, 1.5); // Position the camera
 
 // Set up the renderer
-const renderer = new THREE.WebGLRenderer({ antialias: true });
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
@@ -26,7 +26,7 @@ scene.add(directionalLight);
 const loader = new GLTFLoader();
 let mixer;
 loader.load(
-    'public/fish.glb',
+    'fish.glb',
     (gltf) => {
         const fish = gltf.scene;
         fish.position.set(0, 0, 0);
@@ -38,7 +38,7 @@ loader.load(
             mixer.clipAction(clip).play();
         });
 
-        scene.add(fish);
+        // ADD scene.add(fish) ONCE DONE WITH BACKGROUND
     },
     undefined,
     (error) => {
@@ -58,7 +58,7 @@ function animate() {
     requestAnimationFrame(animate);
 
     if(mixer){
-        mixer.update(0.05);
+        mixer.update(0.01);
     }
 
     renderer.render(scene, camera);
