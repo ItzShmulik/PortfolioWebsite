@@ -1,9 +1,10 @@
 :root{
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body{
     margin: 0;
+    overflow-x: hidden;
 }
 
 #hero-section{
@@ -12,11 +13,16 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    overflow: hidden;
+    height: 131vh;
     color: white;
     display: grid;
     background-color: #cbf6fd;
+}
+
+#projects-section{
+    margin: 0;
+    height: 100vh;
+    background-color: #003b93;
 }
 
 #hero-title{
@@ -30,7 +36,7 @@ body{
 }
 
 #navbar{
-    position: absolute;
+    position: fixed;
     width: 10vw;
     height: 20vh;
     display: flex;

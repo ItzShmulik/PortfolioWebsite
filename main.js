@@ -30,7 +30,7 @@ loader.load(
     (gltf) => {
         const fish = gltf.scene;
         fish.position.set(0, 0, 0);
-        fish.scale.set(4, 4, 4);
+        fish.scale.set(2, 2, 2);
         fish.rotation.y = Math.PI / 1.5;
 
         mixer = new THREE.AnimationMixer(fish);
