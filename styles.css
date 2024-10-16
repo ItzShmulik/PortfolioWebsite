@@ -9,7 +9,7 @@ body{
 
 #hero-section{
     margin: 0;
-    background-image: url("public/sea-background.png");
+    background-image: url("../public/sea-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
