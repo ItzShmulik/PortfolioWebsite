@@ -20,26 +20,39 @@ body{
 }
 
 #hero-title{
-    font-weight: bold;
     font-size: 72px;
+    margin-left: 10%;
+}
+
+#hero-description{
+    font-size: 35px;
     margin-left: 10%;
 }
 
 #navbar{
     position: absolute;
-    width: 100vw;
-    height: 5vh;
+    width: 10vw;
+    height: 20vh;
     display: flex;
-    justify-content: right;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 25px;
+    right: 0;
+    z-index: 2;
+}
+
+#navbar a{
+    color: #5c5b57;
+    text-decoration: none;
+}
+
+#navbar a:hover{
     color: white;
 }
 
-#page-links{
-    width: 20%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 20px;
+#hero-text{
+    line-height: 5vh;
 }
 
 canvas {
