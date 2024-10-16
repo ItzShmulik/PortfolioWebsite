@@ -9,12 +9,12 @@ body{
 
 #hero-section{
     margin: 0;
-    background-image: url("sea-background.png");
+    background-image: url("public/sea-background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 131vh;
-    color: white;
+    color: #3b3b3b;
     display: grid;
     background-color: #cbf6fd;
 }
