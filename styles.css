@@ -8,19 +8,38 @@ body{
 
 #hero-section{
     margin: 0;
-    background-image: url("sea-background.jpg");
+    background-image: url("sea-background.png");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
     overflow: hidden;
     color: white;
     display: grid;
+    background-color: #cbf6fd;
 }
 
 #hero-title{
     font-weight: bold;
     font-size: 72px;
     margin-left: 10%;
+}
+
+#navbar{
+    position: absolute;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: right;
+    color: white;
+}
+
+#page-links{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
 }
 
 canvas {
